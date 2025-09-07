@@ -3,9 +3,6 @@
 /* Declare layer order */
 @layer base, platform, vendor, overrides;
 
-/* Codio base */
-@import url("https://cdn.jsdelivr.net/gh/ecornellnick/ecornell-css@main/styles.css") layer(base);
-
 /* Course-level overrides (moved into cis540s folder) */
 @import url("https://cdn.jsdelivr.net/gh/ecornellnick/ecornell-css@main/cis540s/CIS54x_Overrides.css") layer(platform);
 
@@ -17,3 +14,6 @@
 
 /* Final course-specific overrides */
 @import url("https://cdn.jsdelivr.net/gh/ecornellnick/ecornell-css@main/exOverrideCIS540.css") layer(overrides);
+
+/* EC base */
+@import url("https://cdn.jsdelivr.net/gh/ecornellnick/ecornell-css@main/styles.css");

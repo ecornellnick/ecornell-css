@@ -809,3 +809,9 @@ footer{
   border-width: 2px;
 
 /* End: Added as fix for Codio update */
+
+
+.codio-challenge.codio-assessment-test {
+    margin: 0px;
+    background-color: #fff;
+}

@@ -1,0 +1,99 @@
+.codio-button-result {
+ visibility: visible;
+}
+
+.fail {
+    background-color: white;
+}
+
+.codio-button-expand {
+ display: none;
+}
+
+.instructions {
+  width: 100%;
+  text-align: left;
+}
+
+.card-body {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+abbr[title]{
+    text-decoration: none;
+}
+
+abbr{
+  bottom: none !important;
+}
+
+#jasmine-reporter{
+    margin-top: 15px;
+}
+
+#jasmine-reporter tr:nth-child(even) {
+    background-color: #FFF; 
+}
+
+#jasmine-reporter tr:nth-child(odd) {
+    background-color: #F5F5F5; 
+}
+
+#jasmine-reporter td:nth-child(1), 
+#jasmine-reporter th:nth-child(1) {
+    text-align: center; /* Center text in the first column */
+}
+
+#jasmine-reporter tr td abbr {
+    border: none !important;
+}
+
+.codio-button-result .codio-button-result-out{
+    white-space: normal;
+}
+
+
+
+
+/*
+The following rules I have added un-specific to CIS540s. 
+These are rules that didn't catch for ecornell  styles
+*/
+
+/* Remove the arrow inside the Next button */
+footer button span::after {
+  display: none !important;
+  content: none !important; /* ensure it doesn't render anything */
+}
+
+h1{
+    font-weight: 500 !important;
+}
+
+/* Page title style */
+.page-title {
+  color: #b31b1b !important;
+  font-style: normal !important;
+}
+
+/* Keeps Button text centered */
+footer button{
+    margin: 0px;
+}
+
+/* Hover effect on footer buttons */
+footer button:hover {
+  border-color: #444 !important;
+  color: #fff !important; /* hover text color white */
+}
+
+/* Remove blue focus outline on mouse click */
+button:focus {
+  outline: none !important;
+}
+
+/* Keep accessibility for keyboard users */
+button:focus:not(:focus-visible) {
+  outline: none !important;
+  box-shadow: none !important;
+}

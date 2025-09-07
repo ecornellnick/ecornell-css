@@ -1959,3 +1959,30 @@ footer{
 }
 
 /* End: Added as fix for Codio update */
+
+/* Assessment "test" panel (the green card in your screenshot) */
+.codio-challenge.codio-assessment-test {
+  background: #f7fbf9;
+  border: 1px solid #dfe7e3;
+  border-radius: 10px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.04);
+}
+
+/* The “Check it!” button inside that panel */
+.codio-challenge.codio-assessment-test .btn,
+.codio-challenge.codio-assessment-test button {
+  background-color: #3b87b0;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: .5rem 1rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.codio-challenge.codio-assessment-test .btn:hover,
+.codio-challenge.codio-assessment-test button:hover {
+  background-color: #2f6e90;
+  color: #fff;
+}
+

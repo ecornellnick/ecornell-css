@@ -1,0 +1,811 @@
+/* This is a test DIFF file from Codio's base CSS and our  eC style */
+
+/*
+Contains current Canvas font files.  The family name will never change, only the self-hosted font files associated with it
+*/
+
+@font-face {
+    font-family: 'ec-font';
+    font-display: swap;
+    src: local(''),
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-Light.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-Light.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'ec-font';
+    font-display: swap;
+    src: local(''),
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+/* montserrat-500 - latin */
+@font-face {
+    font-family: 'ec-font';
+    font-display: swap;
+    src: local(''),
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-Medium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-Medium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+/* montserrat-600 - latin */
+@font-face {
+    font-family: 'ec-font';
+    font-display: swap;
+    src: local(''),
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-SemiBold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-SemiBold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+/* montserrat-700 - latin */
+@font-face {
+    font-family: 'ec-font';
+    font-display: swap;
+    src: local(''),
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-Bold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-Bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+/* montserrat-800 - latin */
+@font-face {
+    font-family: 'ec-font';
+    font-weight: 800;
+    font-display: swap;
+    src: local(''),
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-ExtraBold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-ExtraBold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+/* montserrat-300italic - latin */
+@font-face {
+    font-family: 'ec-font';
+    font-display: swap;
+    src: local(''),
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-LightItalic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-LightItalic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+/* montserrat-italic - latin */
+@font-face {
+    font-family: 'ec-font';
+    font-display: swap;
+    src: local(''),
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-Italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-Italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+/* montserrat-500italic - latin */
+@font-face {
+    font-family: 'ec-font';
+    font-display: swap;
+    src: local(''),
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-MediumItalic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-MediumItalic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+/* montserrat-600italic - latin */
+@font-face {
+    font-family: 'ec-font';
+    font-display: swap;
+    src: local(''),
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-SemiBoldItalic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-SemiBoldItalic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+/* montserrat-700italic - latin */
+@font-face {
+    font-family: 'ec-font';
+    font-display: swap;
+    src: local(''),
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-BoldItalic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-BoldItalic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+/* montserrat-800italic - latin */
+@font-face {
+    font-family: 'ec-font';
+    font-weight: 800;
+    font-display: swap;
+    src: local(''),
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-ExtraBoldItalic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('https://d31owemgwclw9w.cloudfront.net/canvas/new_ui/fonts/montserrat/Montserrat-ExtraBoldItalic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+
+
+
+
+
+/* Start Canvas Styles*/
+@import "https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/content_next-481e6bb610.css";
+@import "https://cloud.typography.com/7866252/6156352/css/fonts.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.padded-15 {
+    padding: 15px;
+.mar-top-50{
+  margin-top: 50px !important;
+
+.heading-divider{
+    height: 2px;
+    width: calc(30px - -.5vw);
+    left: 50%;
+    margin-top: .6em;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #ea1e24;
+
+.removelinkdefault {
+
+#react_container{
+  margin-left: 50px;
+  margin-right: 15px;
+
+.codio-assessment-free-text::before, .codio-assessment-multiple-choice::before {
+
+.codio-assessment-free-text, .codio-assessment-multiple-choice {
+padding: 0px 0px 12px 0px !important;
+
+.error::before{
+  background-image: url("https://s3.amazonaws.com/ecornell/Codio/img/Codio_Icon_Incorrect.svg");
+  background-size: 23px 24px;
+  height: 25px;
+  content: "";
+  top: 7px;
+
+    background-color: #666666;
+    border-color: #666666;
+
+a.codio-button.codio-button-type-reset {
+  top: 22px;
+  left: 140px;
+  text-transform: inherit;
+  background: #9D1818 !important;
+  z-index: 9999;
+
+.error{
+  color: #ea1e24;
+  border: 1px solid transparent; 
+  top: 30px;
+  left: -2px;
+  font-family: 'ec-font', 'Gotham Medium', Helvetica,Arial,sans-serif;
+  visibility: visible;
+
+.success::before{
+  background-image: url("https://s3.amazonaws.com/ecornell/Codio/img/Codio_Icon_Correct.svg");
+  background-size: 23px 24px;
+  height: 25px;
+  content: "";
+  top: 7px;
+
+.success{
+  color: #6679A1;
+  border: 1px solid transparent;
+  visibility: visible; 
+  left: -2px;
+  font-family: 'ec-font', 'Gotham Medium', Helvetica,Arial,sans-serif;
+
+.directions{
+  margin: 12px 0;
+  border-left: 8px solid #ea1e24;
+
+.directions ol {
+    margin-bottom: 0px;
+
+/* End Canvas Styles*/
+
+pre.codio-button-result-out.codio-button-result-out-fail {
+  --visibility: collapse;
+  --display: inline;
+
+pre.codio-button-result-out.codio-button-result-out-fail strong, pre.codio-button-result-out.codio-button-result-out-fail string {
+  --visibility: hidden;
+  --word-wrap: break-word;
+  --position: relative;
+  --bottom: 148px;
+
+
+  background-color: #ECEFF1;
+
+
+
+
+
+  visibility: visible;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  margin-top: 1px;
+
+
+
+
+
+  background-image: url("https://ecornell.s3.amazonaws.com/Codio/img/checkmark.svg");
+
+.codio-button-type-assessment-multiple-checkbox.codio-assessment-multiple-ok:hover input:checked + label i,
+.codio-button-type-assessment-multiple-checkbox.codio-assessment-multiple-ok input:checked + label i,
+.codio-button-type-assessment-multiple-checkbox.codio-assessment-multiple-ok:hover label i,
+.codio-button-type-assessment-multiple-checkbox.codio-assessment-multiple-ok label i {
+
+
+.codio-button-type-assessment-multiple-checkbox.codio-assessment-multiple-wrong:hover input:checked + label i,
+.codio-button-type-assessment-multiple-checkbox.codio-assessment-multiple-wrong input:checked + label i {
+
+.codio-button-type-assessment-multiple-checkbox.codio-assessment-multiple-wrong input:checked + label i::before {
+
+
+
+.codio-button-type-assessment-multiple-checkbox * {
+
+
+
+
+
+
+
+
+
+
+table, table input{
+  font-family: 'ec-font', 'Open Sans',Helvetica,Arial,sans-serif;
+
+th{
+  background-color: #93b3c4;
+  border: 1px solid #d8dbdd;
+
+td{
+  border: 1px solid #d8dbdd;
+  color: #000;
+
+
+
+
+
+
+
+
+
+  background-color: #ECEFF1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  background-image: url("/assets/images/guides/blocks/quote.svg");
+  margin-left: -112px;
+  padding: 20px 61px 60px 16px;
+  top: 28px;
+  left: 32px;
+  width: 0;
+
+  background-image: url("/assets/images/guides/blocks/important.svg");
+  top: 28px;
+
+  padding: 0px 20px 12px 20px;
+  /*background-color: #636363;*/
+  /*box-shadow: 2px 2px 4px #DDD;*/
+
+
+
+  background-image: url("/assets/images/guides/blocks/info.svg");
+
+  background-image: url("/assets/images/guides/blocks/definition.svg");
+
+  background-image: url("/assets/images/guides/blocks/warning.svg");
+  background-image: url("/assets/images/guides/blocks/topic.svg");
+
+  background-image: url("https://s3.amazonaws.com/ecornell/Codio/img/check.png");
+  background-size: 65px;
+
+  background-image: url("/assets/images/guides/blocks/guidance.svg");
+
+  background-image: url("/assets/images/guides/blocks/meetups.svg");
+
+  background-image: url("/assets/images/guides/blocks/headlines.svg");
+
+  background-image: url("/assets/images/guides/blocks/hackathon.svg");
+
+  background-image: url("/assets/images/guides/blocks/creatorspaceLab.svg");
+
+  background-image: url("/assets/images/guides/blocks/aDayInTheLifeOf.svg");
+
+  background-image: url("/assets/images/guides/blocks/growthHacks.svg");
+
+  background-image: url("/assets/images/guides/blocks/debugging.svg");
+
+  background-image: url("/assets/images/guides/blocks/acrossTheDisciplines.svg");
+
+
+
+
+
+
+
+
+
+
+
+  background: #666666;
+
+.codio-button-type-normal:hover {
+    outline: none !important;
+    background: #383F47;
+
+.code-test-container {
+    margin-left: 70px;
+
+.codio-button-type-assessment-reset{
+  background: #9D1818 !important;
+
+.codio-button-type-assessment-reset:hover{
+  background: #B31B1B !important;
+
+.codio-button:focus, .codio-button:active, .codio-button:hover{
+  border-width: 3px;
+  background: #383F47;
+  outline: none !important;
+
+  padding: 1em 25px 1em 0px;
+
+
+
+  /*display: inline-block;*/
+
+.codio-button-result-out:before {
+  left: 0px;
+  top: 26px;
+
+.codio-button-result-out-pass:before {
+  content: url("https://ecornell.s3.amazonaws.com/Codio/img/Codio_Icon_Correct.svg");
+
+.codio-button-result-out-fail:before {
+  content: url("https://ecornell.s3.amazonaws.com/Codio/img/Codio_Icon_Incorrect.svg");
+
+.codio-button-result-out-invalid:before {
+  /*content: url("/assets/images/guides/remove_red.svg");*/
+
+.codio-button-result-out-progress:before {
+  /*content: url("/assets/images/guides/spinner-black.gif");*/
+  top: 23px;
+  left: 24px;
+
+  /*visibility: hidden;*/
+  height: 0px;
+
+
+
+
+
+
+
+
+
+
+.codio-challenge.codio-assessment-compare .codio-button-result.fail .codio-button-result-out,
+
+.codio-challenge.codio-assessment-compare .codio-button-result-out > div {
+
+.codio-challenge.codio-assessment-compare .codio-button-result-out > div > pre {
+
+.codio-challenge.codio-assessment-compare .codio-button-result-out .codio-output-text,
+.codio-challenge.codio-assessment-compare .codio-button-result-out .codio-expected-output-text {
+
+.codio-challenge.codio-assessment-compare .codio-button-result-out .codio-output-text {
+  background-color: #fff0ec;
+
+.codio-challenge.codio-assessment-compare .codio-button-result-out .codio-expected-output-text {
+
+
+
+
+.stackinputfeedback {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* highilight css */
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  color: #333;
+  background: #f8f8f8;
+  -webkit-text-size-adjust: none;
+
+.hljs-comment,
+.hljs-template_comment,
+.diff .hljs-header,
+.hljs-javadoc {
+  color: #998;
+
+.hljs-keyword,
+.css .rule .hljs-keyword,
+.hljs-winutils,
+.javascript .hljs-title,
+.nginx .hljs-title,
+.hljs-subst,
+.hljs-request,
+.hljs-status {
+  color: #333;
+
+.hljs-number,
+.hljs-hexcolor,
+.ruby .hljs-constant {
+  color: #008080;
+
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-phpdoc,
+.hljs-dartdoc,
+.tex .hljs-formula {
+  color: #d14;
+
+.hljs-title,
+.hljs-id,
+.scss .hljs-preprocessor {
+  color: #900;
+
+.javascript .hljs-title,
+.hljs-list .hljs-keyword,
+.hljs-subst {
+
+.hljs-class .hljs-title,
+.hljs-type,
+.vhdl .hljs-literal,
+.tex .hljs-command {
+  color: #458;
+
+.hljs-tag,
+.hljs-tag .hljs-title,
+.hljs-rules .hljs-property,
+.django .hljs-tag .hljs-keyword {
+  color: #000080;
+
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body {
+  color: #008080;
+
+.hljs-regexp {
+  color: #009926;
+
+.hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.lisp .hljs-keyword,
+.clojure .hljs-keyword,
+.scheme .hljs-keyword,
+.tex .hljs-special,
+.hljs-prompt {
+  color: #990073;
+
+.hljs-built_in {
+  color: #0086b3;
+
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-doctype,
+.hljs-shebang,
+.hljs-cdata {
+  color: #999;
+
+.hljs-deletion {
+  background: #fdd;
+
+.hljs-addition {
+  background: #dfd;
+
+.diff .hljs-change {
+  background: #0086b3;
+
+.hljs-chunk {
+  color: #aaa;
+
+    position: static;
+    font-family: 'ec-font', "Open Sans", Helvetica, Arial, sans-serif;
+    background-color: #9D1818;
+    color: #3B87B0;
+    width: 200px;
+    margin-top: 0px;
+
+a.codio-button-type-complete:hover {
+
+footer:hover {
+    background: #b31b1b;
+
+a.codio-button-type-next {
+
+  font-weight: 400px;
+
+  max-width: 760px;
+
+.rendered-markdown:focus {
+
+.h1,
+.h2,
+.h3,
+.h4,
+h4{
+    font-family: 'ec-font', 'Gotham Light', Helvetica,Arial,sans-serif;
+    color: #b31b1b;
+
+h2{
+  font-size: 24px;
+
+h3{
+  font-size: 20px;
+
+h4{
+
+
+
+  margin-top: 10px 0;
+  font-size: 28px;
+  color: #b31b1b;
+  font-family: 'ec-font', 'Open Sans', Helvetica,Arial,sans-serif;
+
+  font-size: 28px;
+  color: #b31b1b;
+  font-family: 'ec-font', 'Open Sans', Helvetica,Arial,sans-serif;
+
+
+
+
+
+
+  color: #551A8B;
+
+  /*font-family: 'Eco Coding W01';*/
+
+
+
+  color: #000;
+  margin-top: 6px;
+  font-family: 'ec-font', 'Open Sans',Helvetica,Arial,sans-serif;
+
+
+h1 + .p-tag,
+h3 + .p-tag,
+h4 + .p-tag,
+h5 + .p-tag,
+h6 + .p-tag {
+
+
+
+  padding: 20px 24px;
+
+
+
+
+
+
+
+
+
+
+
+.p-tag{
+  color: #000;
+  font-family: 'ec-font', 'Open Sans',Helvetica,Arial,sans-serif; 
+
+/* Tabs */
+
+.page-content {
+  max-width: 700px; 
+  margin: 32px auto; 
+  padding: 32px; 
+li a, a {
+  color: #6679A1; 
+  transition: all 0.3s;
+  text-decoration-color: #fff;
+
+li a:visited, a:visited {
+  color: #551A8B; 
+  text-decoration-color: #fff;
+
+
+.tabbed {
+  margin: 32px 50px;
+  padding-bottom: 16px;
+
+.tabbed [type="radio"] {
+  /* hiding the inputs */
+
+.tabs {
+  align-items: stretch;
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+  right: 50px;
+.tab > label {
+  margin-bottom: -1px;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  background: #eee;
+  color: #666;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  font-family: 'ec-font', 'Gotham Medium', Helvetica,Arial,sans-serif;
+.tab:hover label {
+  border-top-color: #333;
+  color: #333;
+
+.tab-content {
+  color: #777;
+
+a.codio-button-type-complete.plain {
+    padding: 0px;
+
+footer a {
+    background: none;
+
+/* As we cannot replace the numbers with variables or calls to element properties, the number of this selector parts is our tab count limit */
+.tabbed [type="radio"]:nth-of-type(1):checked ~ .tabs .tab:nth-of-type(1) label,
+.tabbed [type="radio"]:nth-of-type(2):checked ~ .tabs .tab:nth-of-type(2) label,
+.tabbed [type="radio"]:nth-of-type(3):checked ~ .tabs .tab:nth-of-type(3) label,
+.tabbed [type="radio"]:nth-of-type(4):checked ~ .tabs .tab:nth-of-type(4) label,
+.tabbed [type="radio"]:nth-of-type(5):checked ~ .tabs .tab:nth-of-type(5) label {
+  border-bottom-color: #fff;
+  border-top-color: #ea1e24;
+  color: #222;
+
+.tabbed [type="radio"]:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
+.tabbed [type="radio"]:nth-of-type(2):checked ~ .tab-content:nth-of-type(2),
+.tabbed [type="radio"]:nth-of-type(3):checked ~ .tab-content:nth-of-type(3),
+.tabbed [type="radio"]:nth-of-type(4):checked ~ .tab-content:nth-of-type(4) {
+
+#guideText{
+font-family: 'ec-font', 'Open Sans', Helvetica,Arial,sans-serif;
+
+a.codio-button.codio-button-type-reset:hover {
+    outline: none !important;
+    background-color: #B31B1B !important;
+
+.codio-button-type-assessment:hover{
+  outline: none !important;
+
+/* PyTest Reporter */
+
+.tabbed.pytest .codio-md-line div div div .codio-button-result.fail {
+    visibility: hidden !important;
+.tabbed.pytest .codio-md-line div div div pre.codio-button-result-out.codio-button-result-out-fail {
+    visibility: hidden !important;
+.tabbed.pytest .codio-md-line div div div .codio-button-result {
+    visibility: hidden !important;
+
+.pytest-report-header.fail{
+  margin-bottom: 30px;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  padding: 15px;
+  visibility: visible;
+  top: 40px;
+  right: 0px;
+  font-family: 'ec-font', 'Open Sans'
+
+.pytest-report-header.correct {
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    padding: 15px;
+    visibility: visible;
+    top: 40px;
+    right: 0px;
+    font-family: 'ec-font', 'Open Sans';
+
+.correct{
+  background-color: #005f3c;
+
+.fail{
+  background-color: #B31B1B;
+
+.pytest-boxTitle {
+  font-size: 20px !important;
+  border-bottom: 1px solid rgb(230,230,230);
+  color: rgb(0,0,0);
+  visibility: visible;
+
+.pytest-result{
+  color: rgb(0,0,0);
+  visibility: visible;
+  border-bottom: 1px solid rgb(230,230,230);
+  margin: 0px;
+
+.pytest-report {
+  top: 220%;
+  left: 0px;
+  font-family: 'ec-font', 'Open Sans';
+  margin: 0px;
+
+.pytest-check{
+  color: #005f3c;
+
+.pytest-bang{
+  color: #B31B1B;
+
+.display-block a.codio-button.codio-button-type-reset{
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+a:link {
+  color: #0000EE;
+
+a:hover{
+  color: #551A8B;
+
+#ungraded {
+  font-size: 1rem;
+  letter-spacing: .5px;
+  padding: 12px 36px 12px 12px;
+  border-radius: 6px;
+  background-color: #E5F2F8;
+  color: #0078BD;
+
+#graded {
+    font-size: 1rem;
+    letter-spacing: .5px;
+    padding: 12px 36px 12px 12px;
+    border-radius: 6px;
+    background-color: #b31b1b;
+
+/* Begin: Added as fix for Codio update */
+button.codio-button-type-complete.plain, button.codio-button-type-next {
+    background-color: #9D1818 !important;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: transparent !important;
+    font-family: 'ec-font', 'Open Sans';
+
+footer{
+    padding-bottom: 0px;
+
+    background-color: #9D1818;
+    border-color: #9D1818;
+
+.codio-button:hover {
+    background-color: #B31B1B;
+    border-color: #B31B1B;
+
+.codio-button:focus, .codio-button:active, .codio-button:hover{
+  border-width: 2px;
+
+/* End: Added as fix for Codio update */

@@ -1,19 +1,19 @@
 /* loader.css */
 
-/* Declare layer order */
-@layer base, platform, vendor, overrides;
+/* Declare layer order (only applies to the layered imports below) */
+@layer course, vendor, platform, overrides;
 
-/* Course-level overrides (moved into cis540s folder) */
-@import url("https://cdn.jsdelivr.net/gh/ecornellnick/ecornell-css@main/cis540s/CIS54x_Overrides.css") layer(platform);
+/* Course-level overrides (layered) */
+@import url("https://cdn.jsdelivr.net/gh/ecornellnick/ecornell-css@main/cis540s/CIS54x_Overrides.css") layer(course);
 
-/* Vendor: Bootstrap */
+/* Vendor: Bootstrap (layered) */
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css") layer(vendor);
 
-/* Bootstrap tweaks */
+/* Bootstrap tweaks (layered) */
 @import url("https://cdn.jsdelivr.net/gh/ecornellnick/ecornell-css@main/BS4_Overrides.css") layer(platform);
 
-/* Final course-specific overrides */
+/* Extra course-specific overrides (layered) */
 @import url("https://cdn.jsdelivr.net/gh/ecornellnick/ecornell-css@main/exOverrideCIS540.css") layer(overrides);
 
-/* EC base */
-@import url("https://cdn.jsdelivr.net/gh/ecornellnick/ecornell-css@main/styles.css");
+/* ⬇ FINAL WORD: global EC overrides — UNLAYERED & LAST so they beat Codio’s unlayered CSS */
+@import url("https://cdn.jsdelivr.net/gh/ecornellnick/ecornell-css@main/styles.css?v=1");

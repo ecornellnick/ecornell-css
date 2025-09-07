@@ -811,7 +811,9 @@ footer{
 /* End: Added as fix for Codio update */
 
 
-.codio-challenge.codio-assessment-test {
-    margin: 0px;
-    background-color: #fff;
+/* Patch: assessment test panel */
+#react_container .codio-challenge.codio-assessment-test {
+  background: #fff !important; /* beats later 'background' shorthands */
+  margin: 0 !important;
 }
+

@@ -1,20 +1,5 @@
-/* loader.css */
-
-/* Declare layer order (used only for the layered imports) */
-@layer course, vendor, platform, overrides;
-
-/* Course-level overrides (layered) */
-@import url("https://cdn.jsdelivr.net/gh/ecornellnick/ecornell-css@main/cis540s/CIS54x_Overrides.css") layer(course);
-
-/* Vendor: Bootstrap (layered) */
-@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css") layer(vendor);
-
-/* Bootstrap tweaks (layered) */
-@import url("https://cdn.jsdelivr.net/gh/ecornellnick/ecornell-css@main/BS4_Overrides.css") layer(platform);
-
-/* Extra course-specific overrides (layered, optional if you still use it) */
-@import url("https://cdn.jsdelivr.net/gh/ecornellnick/ecornell-css@main/exOverrideCIS540.css") layer(overrides);
-
-/* ⬇ FINAL WORD: global EC overrides — UNLAYERED & LAST */
-@import url("https://cdn.jsdelivr.net/gh/ecornellnick/ecornell-css@main/styles.overrides.css?v=2025-09-07-1v2");
-
+@import "https://s3.amazonaws.com/ecornell/Codio/CSS/styles.css";
+@import "https://ecornell.s3.amazonaws.com/Codio/Courses/CIS540s/CSS/CIS54x_Overrides.css";
+@import "https://ecornell.s3.us-east-1.amazonaws.com/Codio/CSS/exOverrideCIS540.css";
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+@import "https://ecornell.s3.amazonaws.com/Codio/CSS/BS4_Overrides.css"; 

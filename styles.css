@@ -1959,3 +1959,7 @@ footer{
 }
 
 /* End: Added as fix for Codio update */
+
+.codio-challenge.codio-assessment-test {
+    background-color: #FFF;
+}

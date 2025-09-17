@@ -355,3 +355,7 @@ article.cis54x-mainContainer.failedRun::before {
 .codio-button-result.progress {
 	visibility: visible;
 }
+
+abbr, abbr[title]{
+	text-decoration: none !important;
+}

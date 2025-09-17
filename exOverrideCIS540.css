@@ -19,7 +19,7 @@
   border-bottom: 1px solid #dfdfdf;
 }
 
-abbr[title]{
+abbr, abbr[title]{
     text-decoration: none;
 }
 
